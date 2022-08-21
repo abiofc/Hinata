@@ -52,9 +52,9 @@ Hai, *%name!*
 *Fitur:* %totalfeatures command
 
 %readmore
-*Support me:* https://saweria.co/kahfiaja
+*Support me:* https://chat.whatsapp.com/GnYw9xlFZgvL9zsvrRii9E
 *Note:*
-_Jika Respon Tidak Muncul Kemungkinan Terjadi Error_
+_ᴊɪᴋᴀ ʀᴇꜱᴘᴏɴ ᴛɪᴅᴀᴋ ᴍᴜɴᴄᴜʟ ᴋᴇᴍᴜɴɢᴋɪɴᴀɴ ᴛᴇʀᴊᴀᴅɪ ᴇʀʀᴏʀ_
 `.trimStart(),
   header: `${cmenut} *%category* ${cmenuh}`,
   body: `┊${emot} %cmd %islimit %isPremium`,
@@ -184,10 +184,10 @@ let handler = async (m, { conn, groupMetadata, usedPrefix: _p, __dirname }) => {
     }
     text = text.replace(new RegExp(`%(${Object.keys(replace).sort((a, b) => b.length - a.length).join`|`})`, 'g'), (_, name) => '' + replace[name])
     
-    conn.sendHydrated(m.chat, text.trim(), wm + '\n\n' + botdate, hwaifu.getRandom(), gcwangsaf, 'VanzBotz Group', who.split`@`[0], 'Your Number', [
-      ['😇 Menu', '/menu'],
-      ['😎 Owner', '/owner'],
-      ['😱 Test', '/ping']
+    conn.sendHydrated(m.chat, text.trim(), wm + '\n\n' + botdate, hwaifu.getRandom(), gcwangsaf, 'ㄥㄖ丂乇尺 Group', who.split`@`[0], 'Your Number', [
+      ['ᴍᴇɴᴜ📚', '/menu'],
+      ['ᴏᴡɴᴇʀ👥', '/owner'],
+      ['ᴛᴇꜱᴛ', '/ping']
     ], null, false, { mentions: [text] })
     
   } catch (e) {
