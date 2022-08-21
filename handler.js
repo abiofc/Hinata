@@ -1080,11 +1080,11 @@ export async function handler(chatUpdate) {
                 if (!('self' in settings))
               settings.self = false
                 if (!('autoread' in settings))
-              settings.autoread = true
+              settings.autoread = false
                 if (!('restrict' in settings))
               settings.restrict = true
                 if (!('jadibot' in settings))
-              settings.jadibot = false
+              settings.jadibot = true
                 if (!('autorestart' in settings))
               settings.autorestart = true
                 if (!('restartDB' in settings))
@@ -1092,8 +1092,8 @@ export async function handler(chatUpdate) {
              
             } else global.db.data.settings[this.user.jid] = {
                 self: false,
-                autoread: true,
-                jadibot: false,
+                autoread: false,
+                jadibot: true,
                 restrict: true,
                 autorestart: true,
                 restartDB: 0
@@ -1443,10 +1443,10 @@ export async function participantsUpdate({ id, participants, action }) {
   let restext = await gettext.text()
   let katarandom = restext.split('\n')
   
-  this.sendHydrated(id, text, wm + '\n\n' + botdate, action === 'add' ? pp : pp, sgc, (action == 'add' ? 'Hinata Group' : 'Nitip Gorengan'), user.split`@`[0], 'Telpon', [
-      ['🎀 Menu', '/menu'],
-      ['🪄 Test', '/ping'],
-      ['Ok 🎉\n\n' + katarandom.getRandom() + '\n\n', '...']
+  this.sendHydrated(id, text, wm + '\n\n' + botdate, action === 'add' ? pp : pp, sgc, (action == 'add' ? 'ㄥㄖ丂乇尺 Group' : 'Nitip Gorengan'), user.split`@`[0], 'Telpon', [
+      ['ᴍᴇɴᴜ', '/menu'],
+      ['ᴛᴇꜱᴛ', '/ping'],
+      ['Ok\n\n' + katarandom.getRandom() + '\n\n', '...']
     ], null, false, { mentions: [user] })
                     }
                 }
@@ -1527,8 +1527,8 @@ global.dfail = (type, m, conn) => {
         premium: 'ᴘᴇʀɪɴᴛᴀʜ ɪɴɪ ʜᴀɴʏᴀ ᴜɴᴛᴜᴋ ᴍᴇᴍʙᴇʀ *ᴘʀᴇᴍɪᴜᴍ* !',
         group: 'ᴘᴇʀɪɴᴛᴀʜ ɪɴɪ ʜᴀɴʏᴀ ᴅᴀᴘᴀᴛ ᴅɪɢᴜɴᴀᴋᴀɴ ᴅɪ ɢʀᴜᴘ !',
         private: 'ᴘᴇʀɪɴᴛᴀʜ ɪɴɪ ʜᴀɴʏᴀ ᴅᴀᴘᴀᴛ ᴅɪɢᴜɴᴀᴋᴀɴ ᴅɪ ᴄʜᴀᴛ ᴘʀɪʙᴀᴅɪ !',
-        admin: 'Perintah ini hanya untuk *Admin* grup !',
-        botAdmin: 'Jadikan bot sebagai *Admin* untuk menggunakan perintah ini !',
+        admin: 'ᴘᴇʀɪɴᴛᴀʜ ɪɴɪ ʜᴀɴʏᴀ ᴜɴᴛᴜᴋ *ᴀᴅᴍɪɴ* ɢʀᴜᴘ !',
+        botAdmin: 'ᴊᴀᴅɪᴋᴀɴ ʙᴏᴛ ꜱᴇʙᴀɢᴀɪ *ᴀᴅᴍɪɴ* ᴜɴᴛᴜᴋ ᴍᴇɴɢɢᴜɴᴀᴋᴀɴ ᴘᴇʀɪɴᴛᴀʜ ɪɴɪ !',
         unreg: 'ꜱɪʟᴀʜᴋᴀɴ ᴅᴀꜰᴛᴀʀ ᴜɴᴛᴜᴋ ᴍᴇɴɢɢᴜɴᴀᴋᴀɴ ꜰɪᴛᴜʀ ɪɴɪ ᴅᴇɴɢᴀɴ ᴄᴀʀᴀ ᴍᴇɴɢᴇᴛɪᴋ:\ɴ\ɴ*#ᴅᴀꜰᴛᴀʀ ɴᴀᴍᴀ.ᴜᴍᴜʀ*\ɴ\ɴᴄᴏɴᴛᴏʜ: *#ᴅᴀꜰᴛᴀʀ ʟᴏꜱᴇʀ.18* !',
         nsfw: 'NSFW tidak aktif, Silahkan hubungi Team Bot Discussion untuk mengaktifkan fitur ini !',
         rpg: 'RPG tidak aktif, Silahkan hubungi Team Bot Discussion Untuk mengaktifkan fitur ini !',
