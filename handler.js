@@ -1521,15 +1521,15 @@ export async function deleteUpdate(message) {
 
 global.dfail = (type, m, conn) => {
     let msg = {
-        rowner: '*AKSES DITOLAK*\nPerintah ini hanya dapat digunakan oleh *OWWNER* !',
-        owner: '*AKSES DITOLAK*\nPerintah ini hanya dapat digunakan oleh *Owner Bot* !',
-        mods: '*AKSES DITOLAK*\nPerintah ini hanya dapat digunakan oleh *Moderator* !',
-        premium: '*AKSES DITOLAK*\nPerintah ini hanya untuk member *Premium* !',
-        group: '*AKSES DITOLAK*\nPerintah ini hanya dapat digunakan di grup !',
-        private: '*AKSES DITOLAK*\nPerintah ini hanya dapat digunakan di Chat Pribadi !',
-        admin: '*AKSES DITOLAK*\nPerintah ini hanya untuk *Admin* grup !',
-        botAdmin: '*AKSES DITOLAK*\nJadikan bot sebagai *Admin* untuk menggunakan perintah ini !',
-        unreg: 'Silahkan daftar untuk menggunakan fitur ini dengan cara mengetik:\n\n*#daftar nama.umur*\n\nContoh: *#daftar Hinata.18* !',
+        rowner: 'ᴘᴇʀɪɴᴛᴀʜ ɪɴɪ ʜᴀɴʏᴀ ᴅᴀᴘᴀᴛ ᴅɪɢᴜɴᴀᴋᴀɴ ᴏʟᴇʜ *ᴏᴡᴡɴᴇʀ* !',
+        owner: 'ᴘᴇʀɪɴᴛᴀʜ ɪɴɪ ʜᴀɴʏᴀ ᴅᴀᴘᴀᴛ ᴅɪɢᴜɴᴀᴋᴀɴ ᴏʟᴇʜ *ᴏᴡᴡɴᴇʀ* !',
+        mods: 'ᴘᴇʀɪɴᴛᴀʜ ɪɴɪ ʜᴀɴʏᴀ ᴅᴀᴘᴀᴛ ᴅɪɢᴜɴᴀᴋᴀɴ ᴏʟᴇʜ *ᴍᴏᴅᴇʀᴀᴛᴏʀ* !',
+        premium: 'ᴘᴇʀɪɴᴛᴀʜ ɪɴɪ ʜᴀɴʏᴀ ᴜɴᴛᴜᴋ ᴍᴇᴍʙᴇʀ *ᴘʀᴇᴍɪᴜᴍ* !',
+        group: 'ᴘᴇʀɪɴᴛᴀʜ ɪɴɪ ʜᴀɴʏᴀ ᴅᴀᴘᴀᴛ ᴅɪɢᴜɴᴀᴋᴀɴ ᴅɪ ɢʀᴜᴘ !',
+        private: 'ᴘᴇʀɪɴᴛᴀʜ ɪɴɪ ʜᴀɴʏᴀ ᴅᴀᴘᴀᴛ ᴅɪɢᴜɴᴀᴋᴀɴ ᴅɪ ᴄʜᴀᴛ ᴘʀɪʙᴀᴅɪ !',
+        admin: 'Perintah ini hanya untuk *Admin* grup !',
+        botAdmin: 'Jadikan bot sebagai *Admin* untuk menggunakan perintah ini !',
+        unreg: 'ꜱɪʟᴀʜᴋᴀɴ ᴅᴀꜰᴛᴀʀ ᴜɴᴛᴜᴋ ᴍᴇɴɢɢᴜɴᴀᴋᴀɴ ꜰɪᴛᴜʀ ɪɴɪ ᴅᴇɴɢᴀɴ ᴄᴀʀᴀ ᴍᴇɴɢᴇᴛɪᴋ:\ɴ\ɴ*#ᴅᴀꜰᴛᴀʀ ɴᴀᴍᴀ.ᴜᴍᴜʀ*\ɴ\ɴᴄᴏɴᴛᴏʜ: *#ᴅᴀꜰᴛᴀʀ ʟᴏꜱᴇʀ.18* !',
         nsfw: 'NSFW tidak aktif, Silahkan hubungi Team Bot Discussion untuk mengaktifkan fitur ini !',
         rpg: 'RPG tidak aktif, Silahkan hubungi Team Bot Discussion Untuk mengaktifkan fitur ini !',
         restrict: 'Fitur ini di *disable* !'
